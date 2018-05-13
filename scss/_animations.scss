@@ -1,0 +1,12 @@
+.move-from-left {
+    animation: fromLeft 10s ease-in 1s;
+}
+
+@keyframes fromLeft {
+    from {
+    }
+    to {
+        left: 100rem;
+        opacity: 1;
+    }
+}
