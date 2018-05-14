@@ -1,12 +1,25 @@
 .move-from-left {
-    animation: fromLeft 10s ease-in 1s;
+    animation: fromLeft 8s cubic-bezier(0,.78,1,.13) .5s;
 }
 
 @keyframes fromLeft {
-    from {
+    0% {
+        opacity: 0;
+        transform: rotate(20deg);
     }
-    to {
-        left: 100rem;
+
+    40% {
+        transform: rotate(0);
+    }
+
+    50%{
         opacity: 1;
+        
+    }
+
+    100% {
+        left: 150rem;
+        opacity: .5;
+        transform: rotate(-15deg);
     }
 }

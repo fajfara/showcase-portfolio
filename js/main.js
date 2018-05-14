@@ -7,7 +7,8 @@ function changeSubtitleFirst() {
 
 }
 
-function changeFirstDefault() {
+function firsItemOff() {
     subtitleFirst.innerHTML = "Description of the project";
     image1.classList.remove("move-from-left");
+
 }

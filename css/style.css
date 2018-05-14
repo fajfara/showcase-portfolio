@@ -93,13 +93,20 @@ table {
       font-weight: 300; }
 
 .move-from-left {
-  animation: fromLeft 10s ease-in 1s; }
+  animation: fromLeft 8s cubic-bezier(0, 0.78, 1, 0.13) 0.5s; }
 
 @keyframes fromLeft {
-  from { }
-  to {
-    left: 100rem;
-    opacity: 1; } }
+  0% {
+    opacity: 0;
+    transform: rotate(20deg); }
+  40% {
+    transform: rotate(0); }
+  50% {
+    opacity: 1; }
+  100% {
+    left: 150rem;
+    opacity: .5;
+    transform: rotate(-15deg); } }
 
 html, body {
   font-size: 75%; }
