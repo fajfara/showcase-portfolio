@@ -56,8 +56,8 @@ table {
   padding-bottom: 10rem; }
   .showcase__image {
     position: absolute;
-    z-index: 100;
-    top: 10rem;
+    z-index: -1;
+    top: 0;
     left: -40rem;
     opacity: 0; }
   .showcase__item {
@@ -76,6 +76,7 @@ table {
       font-weight: 700;
       cursor: pointer;
       color: black;
+      z-index: 10000;
       -webkit-text-fill-color: black;
       /* Will override color (regardless of order) */
       -webkit-text-stroke-width: 2px;
@@ -92,7 +93,7 @@ table {
       font-family: "Raleway", sans-serif;
       font-weight: 300; }
 
-.move-from-left {
+.heading:hover + .showcase__image {
   animation: fromLeft 8s cubic-bezier(0, 0.78, 1, 0.13) 0.5s; }
 
 @keyframes fromLeft {
@@ -104,8 +105,8 @@ table {
   50% {
     opacity: 1; }
   100% {
-    left: 150rem;
-    opacity: .5;
+    left: 50rem;
+    opacity: 1;
     transform: rotate(-15deg); } }
 
 html, body {

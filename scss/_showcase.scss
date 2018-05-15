@@ -11,11 +11,12 @@
 
     &__image {
         position: absolute;
-        z-index: 100;
-        top: 10rem;
+        z-index: -1;
+        top: 0;
         left: -40rem;
         opacity: 0;
     }
+
 
     &__item {
         display: block;
@@ -36,6 +37,7 @@
             font-weight: 700;
             cursor: pointer;
             color: black;
+            z-index: 10000;
             -webkit-text-fill-color: black; /* Will override color (regardless of order) */
             -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: white;
@@ -56,4 +58,9 @@
             font-weight: 300;
         }
     }
+}
+
+
+.heading:hover + .showcase__image {
+    animation: fromLeft 8s cubic-bezier(0,.78,1,.13) .5s;
 }

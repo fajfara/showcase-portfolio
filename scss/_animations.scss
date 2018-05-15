@@ -1,6 +1,4 @@
-.move-from-left {
-    animation: fromLeft 8s cubic-bezier(0,.78,1,.13) .5s;
-}
+
 
 @keyframes fromLeft {
     0% {
@@ -18,8 +16,8 @@
     }
 
     100% {
-        left: 150rem;
-        opacity: .5;
+        left: 50rem;
+        opacity: 1;
         transform: rotate(-15deg);
     }
 }
