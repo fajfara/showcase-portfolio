@@ -8,29 +8,49 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="navbar">
+        <div class="navbar-buttons">
+            <span><img class="open-menu" src="img/menu.svg" alt="" onclick="openNav()"></span>
+        </div>
+    </div>
+
+    <!-- Overlay Navigation Menu -->
+    <div class="overlay" id="overlay">
+        <h2 class="nav-title">Navigation</h2>
+        <nav class="overlay-menu">
+          <ul>
+            <li><a href="#" onclick="closeNav()">Landing</a></li>
+            <li><a href="#" onclick="closeNav()">About</a></li>
+            <li><a href="#" onclick="closeNav()">Projects</a></li>
+            <li><a href="#" onclick="closeNav()">Contacts</a></li>
+            <li><a href="#" onclick="closeNav()">Resources</a></li>
+            <li><img class="close-menu" src="img/close.svg" onclick="closeNav()" alt=""/></li>
+          </ul>
+        </nav>
+    </div>
+
+    <div class="landing">
+
+    </div>
     
     <div class="showcase">
         <div class="showcase__item">
             <div class="showcase__item--main-title">
                 <h1 class="heading">
-                    This is item number 1
+                    Random Quote Generator
                 </h1>
-                <img class="showcase__image" id="image-1" src="http://via.placeholder.com/600x300" alt="">
-            </div>
-            <div class="showcase__item--subtitle">
-                <span id="item-1-subtitle">Random Quote Generator</span>
+                <img class="showcase__image" id="image-1" src="img/RQM-BG.jpg" alt="">
+                <span class="showcase__item--subtitle" data-hover="(  fajfara.github.io  )">Random Quote Generator</span>
             </div>
             
         </div>
         <div class="showcase__item">
             <div class="showcase__item--main-title">
                 <h1 class="heading">
-                    This is item number 2
+                    Weather App
                 </h1>
                 <img class="showcase__image" id="image-2" src="http://via.placeholder.com/600x300" alt="">
-            </div>
-            <div class="showcase__item--subtitle">
-                <span id="item-2-subtitle">( This is the subtitle )</span>
+                <span class="showcase__item--subtitle fix-weather" data-hover="(  fajfara.github.io  )">Weather app</span>
             </div>
         </div>
 
