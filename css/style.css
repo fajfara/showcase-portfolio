@@ -131,6 +131,7 @@ table {
 
 .landing {
   height: 100vh;
+  position: relative;
   background-image: url("../img/landing.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -138,14 +139,15 @@ table {
   clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
   padding-bottom: 20rem;
   font-family: "Poppins", sans-serif;
-  letter-spacing: 2rem;
-  padding-left: 2rem;
-  font-weight: 700; }
+  letter-spacing: 1rem;
+  padding-left: 1rem;
+  font-weight: 700;
+  z-index: 1000; }
   .landing h1 {
     font-size: 7rem;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
@@ -293,6 +295,54 @@ button:focus {
 @media (max-width: 550px) {
   .overlay nav {
     font-size: 20px; } }
+
+.about {
+  height: 100%;
+  width: 100%;
+  background-color: #e6e6e6;
+  padding-top: 20rem;
+  padding-bottom: 15rem;
+  margin-top: -15rem;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+  z-index: -2; }
+  .about__content {
+    max-width: 96rem;
+    margin: 0 auto;
+    text-align: center;
+    color: black; }
+    .about__content--heading1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 4rem;
+      padding-bottom: 3rem;
+      text-transform: uppercase; }
+    .about__content--aboutParagraph {
+      font-family: "Roboto", sans-serif;
+      font-size: 2rem;
+      line-height: 3rem;
+      text-transform: uppercase;
+      padding-bottom: 3rem; }
+    .about__content--codestatsLink {
+      font-family: "Raleway", sans-serif;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem; }
+      .about__content--codestatsLink a {
+        text-decoration: none;
+        color: blue;
+        margin-left: 1rem; }
+    .about__content--chart {
+      display: block;
+      width: 80%;
+      margin: 0 auto; }
+    .about__content--githubHeading {
+      font-family: "Raleway", sans-serif;
+      font-size: 2rem;
+      padding-top: 3rem; }
+      .about__content--githubHeading a {
+        text-decoration: none;
+        color: blue; }
 
 html, body {
   font-size: 75%; }

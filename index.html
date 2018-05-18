@@ -19,9 +19,9 @@
         <h2 class="nav-title">Navigation</h2>
         <nav class="overlay-menu">
           <ul>
-            <li><a href="#" onclick="closeNav()">Landing</a></li>
-            <li><a href="#" onclick="closeNav()">About</a></li>
-            <li><a href="#" onclick="closeNav()">Projects</a></li>
+            <li><a href="#landing" onclick="closeNav()">Landing</a></li>
+            <li><a href="#about" onclick="closeNav()">About</a></li>
+            <li><a href="#showcase" onclick="closeNav()">Projects</a></li>
             <li><a href="#" onclick="closeNav()">Contacts</a></li>
             <li><a href="#" onclick="closeNav()">Resources</a></li>
             <li><img class="close-menu" src="img/close.svg" onclick="closeNav()" alt=""/></li>
@@ -29,11 +29,48 @@
         </nav>
     </div>
 
-    <div class="landing">
+    <div class="landing" id="landing">
         <h1>ANŽE FAJFAR</h1>
     </div>
+
+    <div class="about" id="about">
+        <div class="about__content">
+            <div class="about__content--heading1">
+                About me
+            </div>
+
+            <div class="about__content--aboutParagraph">
+                <p>
+                    My name is Anze. I am a self taught programmer, currently working in front-end with the end goal of becoming a full stack developer.
+                    I like programming, music and windows. But not the OS ones.  
+                </p>
+            </div>
+
+            <div class="about__content--heading1">
+                My skills:
+            </div>
+
+            <div class="about__content--codestatsLink">
+                <p>Stats taken from: </p>
+                <a href="https://codestats.net/users/fajfara">Codestats</a>
+            </div>
+
+
+            <div class="about__content--chart">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="about__content--githubHeading">
+                <span> Last but not least, link to my Github profile: </span>
+                <a href="https://github.com/fajfara">Github</a>
+            </div>
+
+        </div>
+
+        
+    </div>
     
-    <div class="showcase">
+    <div class="showcase" id="showcase">
         <div class="showcase__item">
             <div class="showcase__item--main-title">
                 <a href="https://www.google.si">
@@ -89,7 +126,8 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="js/codestats.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

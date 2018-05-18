@@ -1,0 +1,67 @@
+.about {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding-top: 20rem;
+    padding-bottom: 15rem;
+    margin-top: -15rem;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+    z-index: -2;
+
+
+    &__content {
+        max-width: 96rem;
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+
+        &--heading1 {
+            font-family: $title-font;
+            font-size: 4rem;
+            padding-bottom: 3rem;
+            text-transform: uppercase;
+        }
+
+        &--aboutParagraph {
+            font-family: $content-font;
+            font-size: 2rem;
+            line-height: 3rem;
+            text-transform: uppercase;
+            padding-bottom: 3rem;
+        }
+
+        &--codestatsLink {
+            font-family: $subtitle-font;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2rem;
+
+            & a {
+                text-decoration: none;
+                color: blue;
+                margin-left: 1rem;
+            }
+        }
+
+        &--chart {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            //background-color: red;
+        }
+
+        &--githubHeading {
+            font-family: $subtitle-font;
+            font-size: 2rem;
+            padding-top: 3rem;
+
+            & a {
+                text-decoration: none;
+                color: blue;
+            }
+        }
+    }
+    
+}
