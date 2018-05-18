@@ -1,12 +1,10 @@
-
-
-
 .showcase {
     max-width: 96rem;
     height: 100%;
     margin: 0 auto;
-    padding-top: 10rem;
+    padding-top: 15rem;
     padding-bottom: 10rem;
+
 
     &__image {
         position: absolute;
@@ -41,20 +39,29 @@
             -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: white;
 
-
-
-            &:hover {
-                color: white;
-                -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+            & a{
+                text-decoration: none;
+                -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
                 -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: transparent;
+                -webkit-text-stroke-color: white;
+
+                &:hover {
+                    color: white;
+                    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+                    -webkit-text-stroke-width: 2px;
+                    -webkit-text-stroke-color: transparent;
+                }
             }
+
+
+
+            
         }
 
         &--subtitle {
             font-size: 1.5rem;
             position: absolute;
-            top: 23rem;
+            top: 20rem;
             left: 50%;
             transform: translateX(-50%);
             -webkit-text-fill-color: $white; /* Will override color (regardless of order) */
@@ -65,7 +72,7 @@
 }
 
 .fix-weather {
-    top: 17rem;
+    top: 14rem;
 }
 
 
