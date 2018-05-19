@@ -52,7 +52,7 @@ table {
   height: 100%;
   margin: 0 auto;
   padding-top: 15rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 30rem; }
   .showcase__image {
     position: absolute;
     z-index: -1;
@@ -196,8 +196,7 @@ table {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 8%;
-  text-shadow: 0px 1px 0px #ffffff, 0px 2px 0px #c5c5c5, 0px 3px 0px #919191, 0px 4px 0px #5a5a5a, 0px 5px 10px rgba(26, 26, 26, 0.6); }
+  top: 8%; }
 
 .overlay nav {
   position: relative;
@@ -299,7 +298,12 @@ button:focus {
 .about {
   height: 100%;
   width: 100%;
-  background-color: #e6e6e6;
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-top: 20rem;
   padding-bottom: 15rem;
   margin-top: -15rem;
@@ -310,7 +314,7 @@ button:focus {
     max-width: 96rem;
     margin: 0 auto;
     text-align: center;
-    color: black; }
+    color: #fff; }
     .about__content--heading1 {
       font-family: "Poppins", sans-serif;
       font-size: 4rem;
@@ -320,18 +324,26 @@ button:focus {
       font-family: "Roboto", sans-serif;
       font-size: 2rem;
       line-height: 3rem;
-      text-transform: uppercase;
       padding-bottom: 3rem; }
     .about__content--codestatsLink {
       font-family: "Raleway", sans-serif;
       font-size: 2rem;
-      display: flex;
       justify-content: center;
-      padding-bottom: 2rem; }
+      padding-bottom: 2rem;
+      line-height: 4rem; }
       .about__content--codestatsLink a {
         text-decoration: none;
-        color: blue;
-        margin-left: 1rem; }
+        color: #fff;
+        background-color: crimson;
+        margin-left: 1rem;
+        display: block;
+        width: 13rem;
+        margin: 0 auto;
+        transition: all .3s;
+        padding: .1rem; }
+        .about__content--codestatsLink a:hover {
+          transform: rotate(-5deg) scale(1.3);
+          box-shadow: 0 1rem 2rem rgba(26, 26, 26, 0.4); }
     .about__content--chart {
       display: block;
       width: 80%;
@@ -339,15 +351,76 @@ button:focus {
     .about__content--githubHeading {
       font-family: "Raleway", sans-serif;
       font-size: 2rem;
-      padding-top: 3rem; }
+      padding-top: 3rem;
+      line-height: 4rem; }
       .about__content--githubHeading a {
         text-decoration: none;
-        color: blue; }
+        color: #fff;
+        display: block;
+        width: 8rem;
+        padding: 1rem;
+        margin: 0 auto;
+        transition: all .3s;
+        background-color: crimson; }
+        .about__content--githubHeading a:hover {
+          transform: rotate(-5deg) scale(1.3);
+          box-shadow: 0 1rem 2rem rgba(26, 26, 26, 0.4); }
+
+.contacts {
+  height: 100%;
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 12%);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 12%); }
+  .contacts__area {
+    display: block;
+    max-width: 96rem;
+    margin: 0 auto;
+    text-align: center; }
+    .contacts__area--title h1 {
+      font-size: 4rem;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 3rem;
+      text-transform: uppercase; }
+    .contacts__area--types .email-tel {
+      list-style: none;
+      font-size: 2rem;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      line-height: 3rem; }
+      .contacts__area--types .email-tel li span {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400; }
+    .contacts__area--types .social {
+      margin-top: 3rem;
+      list-style: none;
+      font-size: 3rem;
+      display: block; }
+      .contacts__area--types .social li a {
+        color: #fff;
+        display: inline-block;
+        transition: all .4s; }
+        .contacts__area--types .social li a:not(:first-child) {
+          margin-left: 1rem; }
+        .contacts__area--types .social li a:hover {
+          color: #e0e0e0;
+          transform: rotate(-5deg) scale(1.7); }
 
 html, body {
   font-size: 75%; }
 
 body {
-  background-color: #1a1a1a;
   box-shadow: inset 0 0 200px 50px rgba(0, 0, 0, 0.6);
+  background-color: #1a1a1a;
+  background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+  background-attachment: fixed;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   box-sizing: border-box; }
