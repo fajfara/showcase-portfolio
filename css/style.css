@@ -132,9 +132,6 @@ table {
 .landing {
   height: 100vh;
   position: relative;
-  background-image: url("../img/landing.jpg");
-  background-size: cover;
-  background-attachment: fixed;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
   padding-bottom: 20rem;
@@ -170,7 +167,9 @@ table {
 
 .overlay {
   position: fixed;
-  background: #e0e0e0;
+  background-color: #e0e0e0;
+  background-image: url("https://www.transparenttextures.com/patterns/washi.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   top: 0;
   left: 0;
   width: 100%;
@@ -196,7 +195,10 @@ table {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 8%; }
+  top: 8%;
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .overlay nav {
   position: relative;
@@ -226,7 +228,9 @@ table {
 .overlay ul li a {
   display: block;
   position: relative;
-  color: #1f1f1f;
+  background: linear-gradient(to left, #fdbb2d, #b21f1f, #1a2a6c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
   overflow: hidden; }
 
@@ -307,8 +311,8 @@ button:focus {
   padding-top: 20rem;
   padding-bottom: 15rem;
   margin-top: -15rem;
-  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
-  clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+  -webkit-clip-path: polygon(0 5%, 30% 0, 60% 5%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0 5%, 30% 0, 60% 5%, 100% 0, 100% 90%, 50% 100%, 0 90%);
   z-index: -2; }
   .about__content {
     max-width: 96rem;
@@ -395,7 +399,18 @@ button:focus {
       font-size: 2rem;
       color: #fff;
       font-family: "Roboto", sans-serif;
-      line-height: 3rem; }
+      line-height: 3rem;
+      background: #1a2a6c;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #fdbb2d, #b21f1f, #1a2a6c);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #fdbb2d, #b21f1f, #1a2a6c);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      padding: 3rem;
+      display: block;
+      width: 40%;
+      margin: 0 auto;
+      letter-spacing: .2rem; }
       .contacts__area--types .email-tel li span {
         font-family: "Raleway", sans-serif;
         font-weight: 400; }
@@ -407,12 +422,44 @@ button:focus {
       .contacts__area--types .social li a {
         color: #fff;
         display: inline-block;
-        transition: all .4s; }
+        transition: all .4s;
+        text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2); }
         .contacts__area--types .social li a:not(:first-child) {
           margin-left: 1rem; }
         .contacts__area--types .social li a:hover {
           color: #e0e0e0;
           transform: rotate(-5deg) scale(1.7); }
+
+.effect2 {
+  position: relative; }
+
+.effect2:before, .effect2:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #111111;
+  -webkit-box-shadow: 0 15px 10px #111111;
+  -moz-box-shadow: 0 15px 10px #111111;
+  box-shadow: 0 15px 10px #111111;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg); }
+
+.effect2:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto; }
 
 html, body {
   font-size: 75%; }
@@ -424,3 +471,6 @@ body {
   background-attachment: fixed;
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   box-sizing: border-box; }
+
+.text-shadow-black {
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2); }

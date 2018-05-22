@@ -25,7 +25,9 @@
 
 .overlay {
     position: fixed;
-    background: rgb(224, 224, 224);
+    background-color: #e0e0e0;
+    background-image: url("https://www.transparenttextures.com/patterns/washi.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     top: 0;
     left: 0;
     width: 100%;
@@ -54,6 +56,9 @@
     left: 50%;
     transform: translate(-50%);
     top: 8%;
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
    
   .overlay nav {
@@ -84,7 +89,9 @@
   .overlay ul li a {
     display: block;
     position: relative;
-    color: rgb(31, 31, 31);
+    background: linear-gradient(to left, #fdbb2d, #b21f1f, #1a2a6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
     overflow: hidden;
   }
