@@ -58,6 +58,7 @@
     top: 8%;
     background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
    
@@ -79,6 +80,7 @@
     display: inline-block;
     position: relative;
     height: 100%;
+    top: -3rem;
   }
   .overlay ul li {
     display: block;
@@ -91,6 +93,7 @@
     position: relative;
     background: linear-gradient(to left, #fdbb2d, #b21f1f, #1a2a6c);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
     overflow: hidden;
@@ -149,6 +152,11 @@
     outline:0;
   }
 
+  .close-menu {
+    padding-left: .3rem;
+    position: relative;
+    top: -3rem;
+  }
    
   .open-menu,
   .close-menu,

@@ -23,8 +23,8 @@
             <li><a href="#landing" onclick="closeNav()">Landing</a></li>
             <li><a href="#about" onclick="closeNav()">About</a></li>
             <li><a href="#showcase" onclick="closeNav()">Projects</a></li>
-            <li><a href="#" onclick="closeNav()">Contacts</a></li>
-            <li><a href="#" onclick="closeNav()">Resources</a></li>
+            <li><a href="#contacts" onclick="closeNav()">Contacts</a></li>
+            <li><a href="#resources" onclick="closeNav()">Resources</a></li>
             <li><img class="close-menu" src="img/close.svg" onclick="closeNav()" alt=""/></li>
           </ul>
         </nav>
@@ -72,6 +72,9 @@
     </div>
     
     <div class="showcase" id="showcase">
+        <div class="showcase__title">
+            <h1>Projects</h1>
+        </div>
 
         <div class="showcase__item">
             <div class="showcase__item--main-title">
@@ -80,7 +83,7 @@
                         Random Quote Generator
                     </h1>
                     <img class="showcase__image" id="image-1" src="img/RQM-BG.jpg" alt="">
-                    <span class="showcase__item--subtitle" data-hover="(  https://fajfara.github.io/quote-machine/ )">Random Quote Generator</span>
+                    <span class="showcase__item--subtitle" data-hover="( fajfara.github.io)">Random Quote Generator</span>
                 </a>
             </div>
             
@@ -91,26 +94,26 @@
                     <h1 class="heading">
                         Weather App
                     </h1>
-                    <img class="showcase__image" id="image-2" src="http://via.placeholder.com/600x300" alt="">
-                    <span class="showcase__item--subtitle fix-weather" data-hover="(  https://fajfara.github.io/weather-app/  )">Weather app</span>
+                    <img class="showcase__image" id="image-2" src="img/weather-app.jpg" alt="weather-app">
+                    <span class="showcase__item--subtitle fix-weather" data-hover="( fajfara.github.io )">Weather app</span>
                 </a>
             </div>
         </div>
 
         <div class="showcase__item">
             <div class="showcase__item--main-title">
-                <a href="https://fajfara.github.io/">
+                <a href="https://fajfara.github.io/wikipedia-viewer/">
                     <h1 class="heading">
                         Wiki View
                     </h1>
-                    <img class="showcase__image" id="image-2" src="http://via.placeholder.com/600x300" alt="">
-                    <span class="showcase__item--subtitle fix-weather" data-hover="(  fajfara.github.io  )">Wiki View</span>
+                    <img class="showcase__image" id="image-2" src="img/wikiView.jpg" alt="wiki-view">
+                    <span class="showcase__item--subtitle fix-wiki" data-hover="( fajfara.github.io )">Wiki View</span>
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <div class="contacts__area">
             <div class="contacts__area--title">
                 <h1>Contact Me</h1>
@@ -135,8 +138,10 @@
             </div>
         </div>
     </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="js/codestats.js"></script>
+    <script src="js/smoothScroll.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
