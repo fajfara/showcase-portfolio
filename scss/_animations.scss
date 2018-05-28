@@ -1,13 +1,15 @@
 
 
-@keyframes fromLeft {
+@-webkit-keyframes fromLeft {
     0% {
         opacity: 0;
-        transform: rotate(20deg);
+        -webkit-transform: rotate(20deg);
+                transform: rotate(20deg);
     }
 
     40% {
-        transform: rotate(0);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
     }
 
     50%{
@@ -18,6 +20,31 @@
     100% {
         left: 40rem;
         opacity: .5;
-        transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+    }
+}
+@keyframes fromLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(20deg);
+                transform: rotate(20deg);
+    }
+
+    40% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+
+    50%{
+        opacity: 1;
+        
+    }
+
+    100% {
+        left: 40rem;
+        opacity: .5;
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
     }
 }
